@@ -91,7 +91,7 @@ const translate = (x = 0, y = 0, z = 0) => {
 
 const rotate = (axis, degree) => {
   if (!isNumeric(degree)) throw new Error('Unaccepted value. Degree must be a number')
-  const a = degree * (180 / Math.PI)
+  const a = degree * (Math.PI / 180)
   const sin = Math.sin
   const cos = Math.cos
 
